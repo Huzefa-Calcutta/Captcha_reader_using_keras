@@ -5,7 +5,11 @@ import json
 import time
 import flask
 import keras
-from model import load_cnn,load_weights
+import PIL
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+import model.load_cnn as load_cnn
+import model.load_weights as load_weights
+
 from utils import prep_data
 
 model_arc = load_cnn.save_model_arch()
