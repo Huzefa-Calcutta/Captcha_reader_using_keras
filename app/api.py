@@ -4,8 +4,13 @@ import numpy as np
 import json
 import time
 import flask
+import numpy as np
 import keras
-import PIL
+from PIL import Image
+from keras.models import Graph
+from keras.layers.core import Dense, Flatten, Dropout
+from keras.layers.convolutional import Convolution2D, MaxPooling2D
+
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 import model.load_cnn as load_cnn
 import model.load_weights as load_weights
